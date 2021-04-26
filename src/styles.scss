@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+
+// helpers
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-no-space{
+    display: flex;
+    align-items: center;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+.flex-vertical-nospace {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+}
+
+.center {
+    z-index: 2;
+   text-align: center;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.no-border {
+    border: none
+}
+
+//layout
+.main-layout#app {
+    min-height: 100vh;
+    grid-template-rows: auto 1fr;
+}
+
+.main-layout {
+    // display: grid;
+    // grid-template-columns: minmax(auto,1fr) minmax(auto,960px) minmax(auto,1fr);
+    grid-template-columns: 1fr 1100px 1fr;
+
+
+    > * {
+        grid-column: 2;
+    }
+    > .full {
+        grid-column: 1 / -1;
+    }
+
+}
+
+body{
+    color: white;
+}
