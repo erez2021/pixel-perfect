@@ -120,6 +120,7 @@
     h1{
         font-size: 48px;
         line-height: 0.5;
+        margin-bottom: 50px;
     }
 }
 
@@ -139,5 +140,40 @@
     width: 62px;
     height: 62px;
     border-radius: 50%;
+}
+
+.h3-qoute{
+    margin-top: 60px;
+}
+
+@media screen and (max-width:425px) {
+    .home1{
+        display: none;
+    }
+    .bottom-section-body{
+        position: absolute;
+        width: 327px;
+        height: 210px;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+     font-weight: bold;
+        text-align: center;
+        h1{
+            font-size: 28px;
+            line-height: 0.5;
+        }
+    }
+    .middle-title{
+        width: 327px;
+        height: 80px;
+        line-height: 0.3;
+        h1{
+            font-size: unset;
+     
+        }
+    }
+    .img2-container {
+        position: unset;
+    }
 }
 

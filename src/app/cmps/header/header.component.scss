@@ -23,3 +23,21 @@
 .logo{
     font-size: 40px;
 }
+@media screen and (max-width:425px) {
+    .header{
+        padding-top: 50px;
+        width: 327px;
+        height: 32px;
+        margin: 0 auto;
+      
+    }
+    
+    .link {
+        margin: 0 10px 0 20px;
+    }
+    
+.header-btn{
+    height: 32px;
+    width: 53px;
+}
+}
